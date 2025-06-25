@@ -9,7 +9,7 @@ def get_available_llm():
     """Get available LLM with priority: Ollama -> OpenAI"""
     
     ollama_models = [
-        "tinyllama",
+        "codellama:7b-instruct-q4_0",
         "llama2:7b-chat-q4_0",
         "phi:latest",
         "mistral:7b-instruct-q4_0"

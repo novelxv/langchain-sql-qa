@@ -38,7 +38,7 @@ def test_ollama_connection():
             models = response.json()
             model_count = len(models.get('models', []))
             
-            llm = ChatOllama(model="tinyllama", base_url="http://localhost:11434", temperature=0)
+            llm = ChatOllama(model="codellama:7b-instruct-q4_0", base_url="http://localhost:11434", temperature=0)
             response = llm.invoke("What is 2+2?")
             
             return True, f"Ollama OK - {model_count} models available"

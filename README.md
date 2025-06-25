@@ -24,7 +24,7 @@ A natural language to SQL query system using LangChain and LangGraph.
 Update `.env` file:
 ```env
 DATABASE_URL=postgresql://postgres:nooveel@localhost:5432/chinook
-OLLAMA_MODEL=tinyllama
+OLLAMA_MODEL=codellama:7b-instruct-q4_0
 OLLAMA_BASE_URL=http://localhost:11434
 OPENAI_API_KEY=your_key_here
 ```
